@@ -30,7 +30,7 @@ currentfile = 1
 # mesh = om.TriMesh()
 
 
-# mesh = om.read_trimesh("../objdata/bunny.obj")
+# mesh = om.read_trimesh("objdata/bunny.obj")
 
 
 # mesh = om.read_trimesh("cube.obj")
@@ -156,11 +156,11 @@ def myMouse(button, state, x, y):
     if button == GLUT_LEFT_BUTTON and state == GLUT_UP:
         mousetate = 0
 
-    # 滚轮事件 ,scale 增加就是放大 减小就是缩小,currentfile 对不同的模型用不用的scale
+    # 滚轮事件 ,scale 增加就是放大 减小就是缩小
     if state == GLUT_UP and button == GLUT_WHEEL_DOWN:
         if currentfile == 1:
             scale += 0.0005
-            print("666")
+            #print("666")
 
     if state == GLUT_UP and button == GLUT_WHEEL_UP:
         if currentfile == 1:
